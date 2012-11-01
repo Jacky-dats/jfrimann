@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Home</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet"  href="css/jquery.ui.datepicker.mobile.css" /> 
+
+	<script src="jquery/jquery.js"></script>
+	<script src="jquery/jquery.mobile-1.2.0.min.js"></script>
+	
+	<script src="jquery/jquery.ui.datepicker.mobile.js"></script>
+	<script>
+		//reset type=date inputs to text
+		$( document ).bind( "mobileinit", function(){
+			$.mobile.page.prototype.options.degradeInputs.date = true;
+		});	
+	</script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header" data-theme="b">
+		<h1>frimann</h1>
+		<a href="home.html" data-transition="slide" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<a href="../nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="index-content" align="center">
+			<form action="#" method="get">
+			<div data-role="fieldcontain">
+	     	    <label for="date">Date Input:</label>
+	     	    <input type="date" name="date" id="date" value=""  />
+			</div>		
+		</form>
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer" class="footer-docs" data-theme="b">
+		<h1>footer</h1>
+	</div>
+</div><!-- /page -->
+
+</body>
+</html>

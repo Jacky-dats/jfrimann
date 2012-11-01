@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>77af65da-840f-4e8c-a6fb-6f65e707b400</ProjectGuid>
     <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
-    <AppIdentifier>com.telerik.jfrimann</AppIdentifier>
+    <AppIdentifier>com.is.jfrimann</AppIdentifier>
     <ProjectName>jfrimann</ProjectName>
     <IsRunnable>true</IsRunnable>
     <TemplateAppName>Cordova200</TemplateAppName>
@@ -30,6 +30,9 @@
     <Folder Include="App_Resources\Android\drawable-ldpi">
       <Platform>Android</Platform>
     </Folder>
+    <Folder Include="js" />
+    <Folder Include="config" />
+    <Folder Include="styles\images" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\iOS\icon.png" />
@@ -53,17 +56,28 @@
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calendar.html" />
+    <Content Include="config\config.json" />
+    <Content Include="home.html" />
     <Content Include="index.html" />
-    <Content Include="jquery-mobile\images\ajax-loader.png" />
-    <Content Include="jquery-mobile\images\ajax-loader.gif" />
-    <Content Include="jquery-mobile\images\icons-18-black.png" />
-    <Content Include="jquery-mobile\images\icons-18-white.png" />
-    <Content Include="jquery-mobile\images\icons-36-black.png" />
-    <Content Include="jquery-mobile\images\icons-36-white.png" />
-    <Content Include="jquery-mobile\jquery-1.7.1.min.js" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.css" />
-    <Content Include="jquery-mobile\jquery.mobile-1.1.1.min.js" />
-    <Content Include="js\hello-world.js" />
+    <Content Include="jquery\jquery.js" />
+    <Content Include="jquery\jquery.mobile-1.2.0.js" />
+    <Content Include="jquery\jquery.mobile-1.2.0.min.js" />
+    <Content Include="jquery\jQuery.ui.datepicker.js" />
+    <Content Include="jquery\jquery.ui.datepicker.mobile.js" />
+    <Content Include="js\frimannAjax.js" />
+    <Content Include="js\frimannStore.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\page_end.js" />
+    <Content Include="login.html" />
+    <Content Include="styles\images\ajax-loader.gif" />
+    <Content Include="styles\images\icons-18-black.png" />
+    <Content Include="styles\images\icons-18-white.png" />
+    <Content Include="styles\images\icons-36-black.png" />
+    <Content Include="styles\images\icons-36-white.png" />
+    <Content Include="styles\jquery.mobile-1.2.0.css" />
+    <Content Include="styles\jquery.mobile.tabs.css" />
+    <Content Include="styles\jquery.ui.datepicker.mobile.css" />
     <Content Include="styles\main.css" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
